@@ -6,4 +6,34 @@
 
 @media (max-width:768px) {}
 
-@media (max-width:576px) {}
+@media (max-width:576px) {
+    .header__content {
+        height: 600px;
+        justify-content: center;
+        padding: 0 15px;
+    }
+
+    .header__content-items {
+        padding: 30px;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .header__content-title {
+        font-size: 18px;
+        line-height: 25px;
+        padding-top: 5px;
+        max-width: 100%;
+    }
+
+    .header__content-info {
+        column-gap: 15px;
+        row-gap: 15px;
+        margin: 20px 0;
+        justify-content: space-around;
+    }
+
+    .header__content-text {
+        max-width: 100%;
+    }
+}
