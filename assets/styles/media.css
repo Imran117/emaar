@@ -1,10 +1,103 @@
 @media (max-width:1400px) {}
 
-@media (max-width:1200px) {}
+@media (max-width:1200px) {
 
-@media (max-width:992px) {}
+    /* SALE SECTION >>> */
+    .main__sale-title {
+        font-size: 30px;
+        line-height: 30px;
+    }
 
-@media (max-width:768px) {}
+    .main__sale-text {
+        margin: 20px 0;
+    }
+
+    .main__sale-catalog {
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .main__sale-sub {
+        font-size: 24px;
+        line-height: 20px;
+    }
+
+    .main__sale-name {
+        margin-top: 5px;
+    }
+
+    /* <<< SALE SECTION */
+    /* PROJECT SECTION >>> */
+    .main__project-item {
+        padding: 5px;
+    }
+
+    .main__project-sub {
+        padding: 10px;
+    }
+
+    .main__project-name {
+        font-size: 20px;
+    }
+
+    .main__project-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:992px) {
+
+    /* SALE SECTION >>> */
+    .main__sale {
+        flex-direction: column;
+        padding: 60px 0;
+        column-gap: 0;
+    }
+
+    .main__sale-info {
+        margin-top: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* <<< SALE SECTION */
+    /* PROJECT SECTION >>> */
+    .main__project-name {
+        font-size: 18px;
+    }
+
+    .main__project-text,
+    .main__project-text span {
+        font-size: 16px;
+    }
+
+    /* <<< PROJECT SECTION */
+
+}
+
+@media (max-width:768px) {
+    /* SALE SECTION >>> */
+    .main__sale-catalog {
+        margin-bottom: 20px;
+    }
+
+    /* <<< SALE SECTION */
+    /* PROJECT SECTION >>> */
+    .main__project-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    .main__project-title {
+        margin-bottom: 20px;
+    }
+    /* <<< PROJECT SECTION */
+}
 
 @media (max-width:576px) {
     .header__content {
@@ -36,4 +129,19 @@
     .header__content-text {
         max-width: 100%;
     }
+
+    .main__sale-image {
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    /* SALE SECTION >>> */
+    .main__sale-title {
+        font-size: 24px;
+    }
+
+    /* <<< SALE SECTION */
 }

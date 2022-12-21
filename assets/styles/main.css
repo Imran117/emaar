@@ -39,7 +39,7 @@ body {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1330px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -141,3 +141,210 @@ body {
     top: 0;
     right: -5px;
 }
+
+/* <<< header section end */
+
+/* main section >>> */
+
+.main {
+    position: relative;
+    height: 500px;
+}
+
+/* MAIN LINE >>> */
+
+.main__memo {
+    max-width: 902px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 451px);
+    z-index: -1;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__memo-line {
+    width: 1px;
+    height: 100%;
+    background: #071c350d;
+}
+
+.main__memo-line::before,
+.main__memo-line::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #071c350d;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main__memo-line::after {
+    right: 0;
+    left: auto;
+}
+
+/* <<< MAIN LINE */
+
+/* SALE SECTION >>> */
+.main__sale {
+    padding: 153px 0 185px;
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.main__sale-image {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    height: 547px;
+}
+
+.main__sale-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__sale-shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main__sale-title {
+    font-family: var(--fontAlet);
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 53px;
+    color: var(--darkBlue);
+}
+
+.main__sale-text {
+    max-width: 620px;
+    font-family: var(--fontLato);
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--gray);
+    margin: 30px 0 50px;
+}
+
+.main__sale-catalog {
+    max-width: 650px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main__sale-sub {
+    font-family: var(--fontAlet);
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 44px;
+    color: var(--darkBlue);
+}
+
+.main__sale-name {
+    text-transform: uppercase;
+    font-family: var(--fontLato);
+    font-weight: 300;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+.main__sale-btn {
+    padding: 10px 60px;
+    background: var(--darkBlue);
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-family: var(--fontLato);
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* <<< SALE SECTION */
+/* PROJECT SECTION >>> */
+
+.main__project-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--fontAlet);
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 40px;
+    color: var(--darkBlue);
+    margin-bottom: 52px;
+}
+
+.main__project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.main__project-item {
+    border: 1px solid #071c351a;
+    padding: 15px;
+    max-width: 420px;
+    transition: 0.5s;
+}
+
+.main__project-item:hover {
+    transform: scale(1.05);
+}
+
+.main__project-el {
+    position: relative;
+}
+
+.main__project-el > img {
+    width: 100%;
+    height: 100%;
+}
+
+.main__project-sub {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 22px 15px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(7.5px);
+}
+
+.main__project-name {
+    text-transform: uppercase;
+    font-family: var(--fontAlet);
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    color: var(--darkBlue);
+}
+
+.main__project-text {
+    margin-top: 7px;
+    text-transform: uppercase;
+    font-family: var(--fontLato);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--darkBlue);
+}
+
+.main__project-text > span {
+    font-size: 20px;
+}
+
+/* PROJECT SECTION >>> */
