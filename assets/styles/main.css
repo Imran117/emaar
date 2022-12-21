@@ -148,7 +148,6 @@ body {
 
 .main {
     position: relative;
-    height: 500px;
 }
 
 /* MAIN LINE >>> */
@@ -309,7 +308,7 @@ body {
     position: relative;
 }
 
-.main__project-el > img {
+.main__project-el>img {
     width: 100%;
     height: 100%;
 }
@@ -343,8 +342,133 @@ body {
     color: var(--darkBlue);
 }
 
-.main__project-text > span {
+.main__project-text>span {
     font-size: 20px;
 }
 
-/* PROJECT SECTION >>> */
+/* <<< PROJECT SECTION */
+
+.main__location {
+    display: flex;
+    justify-content: flex-end;
+    padding: 110px 0 60px;
+    background: var(--bg);
+}
+
+.main__location-title {
+    max-width: 457px;
+    text-transform: uppercase;
+    font-family: var(--fontAlet);
+    line-height: 52px;
+    font-size: 44px;
+    font-weight: 400;
+    color: var(--darkBlue);
+    position: absolute;
+    top: 268px;
+    left: -21px;
+}
+
+.main__location-wrapper {
+    position: relative;
+}
+
+.main__location-wrapper > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__location-el {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__location-item {
+    width: 200px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 12px;
+    left: calc(50% - 100px);
+    transition: 0.4s ease-out;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.main__location-item.active {
+    opacity: 1;
+    height: 200px;
+    z-index: 99;
+}
+
+.main__location-item>img {
+    width: 100%;
+    height: 120px;
+}
+
+.main__location-info {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__location-name {
+    max-width: 135px;
+    font-family: var(--fontLato);
+    font-weight: 500;
+    line-height: 19px;
+    color: var(--darkBlue);
+    text-align: center;
+    
+}
+
+#element-1 {
+    left: 49%;
+    bottom: 68%;
+
+}
+
+#element-2 {
+    left: 40%;
+    bottom: 53%;
+}
+
+#element-3 {
+    left: 28%;
+    bottom: 14%;
+}
+
+.main__location-dot {
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--darkBlue);
+    border: 5px solid var(--white);
+    position: relative;
+    cursor: pointer;
+}
+
+.main__location-dot::before {
+    content: '';
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    top: calc(50% - 15.5px);
+    left: calc(50% - 15.5px);
+    border-radius: 50%;
+    border: 5px solid var(--darkBlue);
+    transition: 0.5s ease-in-out;
+    transform: scale(0);
+}
+
+.main__location-dot:hover::before {
+    transform: scale(1);
+}
