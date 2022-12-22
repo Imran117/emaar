@@ -25,19 +25,19 @@ window.addEventListener('load', function () {
     }
 })
 
-const catalogBtns = document.querySelectorAll('.main__catalog-btn '),
-      catalogViews = document.querySelectorAll('.main__catalog-views');
+const catalogBtns = document.querySelectorAll('.main__catalog-btn'),
+    catalogViews = document.querySelectorAll('.main__catalog-views');
 
-catalogBtns.forEach((el,i) => {
+catalogBtns.forEach((el, i) => {
     el.addEventListener('click', (e) => {
-        let attr = e.target.getAttribute('data-category')
-        for (let i = 0; i < catalogBtns.length; i++) {
-            if (attr == true) {
-                catalogBtns[i].classList.remove('active')
+        let attr = e.target.getAttribute('data-category');
+        if (e.target.hasAttribute('data-category')) {
+            for (let i = 0; i < catalogViews.length; i++) {
+                catalogBtns[i].classList.remove('active');
+                catalogViews[i].classList.remove('active');
             }
-        }
-        if(attr) {
-            el.classList.add('active')
+            el.classList.add('active');
+            catalogViews[attr].classList.add('active');
         }
     })
 })
@@ -82,15 +82,15 @@ class Slider {
         this.next.onclick = () => this.move(this.next)
 
         if (autoplay) {
-           let intervalId = setInterval(() => this.move(this.next), this.interval);
-           
-           this.slider.addEventListener('mouseenter', () => {
-               clearInterval(intervalId)
-           })
-           
-           this.slider.addEventListener('mouseleave', () => {
-               intervalId = setInterval(() => this.move(this.next), this.interval);
-           })
+            let intervalId = setInterval(() => this.move(this.next), this.interval);
+
+            this.slider.addEventListener('mouseenter', () => {
+                clearInterval(intervalId)
+            })
+
+            this.slider.addEventListener('mouseleave', () => {
+                intervalId = setInterval(() => this.move(this.next), this.interval);
+            })
         }
     }
 
