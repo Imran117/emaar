@@ -4,6 +4,9 @@
         line-height: 30px;
         left: 20px;
     }
+    .footer__image {
+        display: none;
+    }
 }
 
 @media (max-width:1200px) {
@@ -196,6 +199,33 @@
 
     .main__form-doc>input {
         margin-left: 0;
+    }
+
+    /* FOOTER SECTION */
+
+    .footer__content {
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+
+    .footer__content-sub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__content-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__content-list li:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .footer__content-list > li {
+        margin: 10px 0;
     }
 }
 
@@ -394,7 +424,6 @@
 
     /* <<< FORM SECTION */
 }
-
 
 @media (max-width: 480px) {
 
