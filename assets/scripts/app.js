@@ -68,7 +68,8 @@ class Slider {
             sl.style = `
                 position:absolute;
                 height:${this.height}px;
-                width:${this.width}px;
+                max-width:${this.width}px;
+                width: 100%
             `
             if (i !== this.activeSlide) {
                 sl.style.transform = `translate${this.dir}(${this.moveSize}px)`
@@ -137,20 +138,20 @@ const slider1 = new Slider({
     el: '#slider1',
     direction: 'X',
     time: 1000,
-    autoplay: true,
-    interval: 5000
+    // autoplay: true,
+    // interval: 5000
 })
 const slider2 = new Slider({
     el: '#slider2',
     direction: 'X',
     time: 1000,
-    autoplay: true,
-    interval: 5000
+    // autoplay: true,
+    // interval: 5000
 })
 const slider3 = new Slider({
     el: '#slider3',
     direction: 'X',
     time: 1000,
-    autoplay: true,
-    interval: 5000
+    // autoplay: true,
+    // interval: 5000
 })
